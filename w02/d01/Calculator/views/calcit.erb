@@ -1,0 +1,25 @@
+
+
+<form action="/basic_calc" method="POST">
+  <h1>Calc It!</h1>
+  <p>
+    <label for="first_num">First Number</label>
+    <input type="decimal" name="first_num" id="first_num">
+  </p>
+  <p>
+    <label for="operator">Operator</label>
+    <select> 
+      <option name="add">Add</option>
+      <option name="subtract">Subtract</option>
+      <option name="divide">Divide</option>
+      <option name="multiply">Muliply</option>
+    </select>
+  </p>
+  <p>
+    <label for="second_num">Second Number</h1></label>
+    <input type="text" name="second_num" id="second_num">
+  </p>
+  <input type="submit">
+
+  <p>When  <%= @first_num %><%= @operator %><%= @second_num %> the result is: <%= @result %></p>
+</form>
