@@ -1,0 +1,20 @@
+<style>
+    body {
+    padding-top: 60px; /* When using the navbar-top-fixed */
+    }
+    .center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+    }
+    .centercontents {
+    text-align: center !important;
+    }
+    .alignrightcontents {
+    text-align: right !important;
+    }
+    body
+    {
+    background-image:url('/img/escheresque_ste.png');
+    }
+</style>
