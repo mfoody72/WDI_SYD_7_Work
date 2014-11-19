@@ -1,0 +1,13 @@
+
+
+# # ----------- ARRAYS ------------------
+
+# my_numbers = [1,3,5,56,6,77755,3]
+
+# long, lat = [1,2]
+
+# ----------- METHODS ------------------
+
+def area (width, height)
+	width * height
+end
