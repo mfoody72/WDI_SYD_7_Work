@@ -1,0 +1,31 @@
+ <form class="search" action="/search" method="GET">    
+    <div class="input-group-sm">
+      <input type="text" class="form-control-sm" name="search" placeholder="Frozen">
+      <span class="input-group-btn">
+        <button class="btn btn-default-sm" type="button" value="Lookup Movie">Look up Movie!</button>
+      </span>
+    </div>
+  <main>
+<h2><%= @movie["Title"] %></h2>
+  <ul>
+    <li>Year: <%= @movie["Year"] %></li>
+    <li>Rated: <%= @movie["Rated"]%></li>
+    <li>Released: <%= @movie["Released"]%></li>
+    <li>Runtime: <%= @movie["Runtime"]%></li>
+    <li>Genre: <%= @movie["Genre"]%></li>
+    <li>Director: <%= @movie["Director"]%></li>
+    <li>Writer: <%= @movie["Writer"]%></li>
+    <li>Actors: <%= @movie["Actors "]%></li>
+    <li>Plot: <%= @movie["Plot"]%></li>
+    <li>Language: <%= @movie["Language"]%></li>
+    <li>Country: <%= @movie["Country"]%></li>
+    <li>Awards: <%= @movie["Awards"]%></li>
+    <li>Metascore: <%= @movie["Metascore"]%></li>
+    <li>Genre: <%= @movie["Genre"]%></li>
+    <li>imbdRating: <%= @movie["imbdRating"]%></li>
+    <li>imdbVotes: <%= @movie["imdbVotes"]%></li>
+  </ul>
+</main>
+  <aside>
+<img src="<%= @movie["Poster"]%>">
+</aside>

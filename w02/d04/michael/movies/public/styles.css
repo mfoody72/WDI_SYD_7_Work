@@ -1,0 +1,71 @@
+.clearfix {
+  clear: both;
+}
+
+h1, h2, h3, p {
+  font-family: 'Open Sans', sans-serif;
+  color: #4A4A4A;
+}
+
+body {
+  background: #d6d6d6;
+}
+
+.container {
+  width: 800px; 
+  margin: 0 auto;
+  padding: 50px;
+  background: #E0E0E0;
+  height: 2000px;
+}
+main {
+  width: 300px;
+  float: left;
+}
+.search {
+  height: 35px;
+}
+header {
+  text-align: center;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+input {
+  height: 60px;
+}
+.form-control {
+  height: 34px;
+  background: #EDEDED;
+}
+input.form-control {
+  height: 60px;
+  background: #EDEDED;
+}
+li {
+  color: #4A4A4A  ;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+    margin-top: 20px;
+}
+ul a:hover {
+    color: #C7C7C7;
+    text-decoration: none;
+    background: #9E9E9E;
+}
+ul a {
+  text-decoration: none;
+  color: #A0A1A3;
+  padding:10px;
+  background: #9E9E9E;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: white;
+}

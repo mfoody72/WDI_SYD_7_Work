@@ -1,0 +1,27 @@
+  <form class="search" action="/search" method="GET">    
+    <div class="input-group-sm">
+      <span class="input-group-btn">
+        <button class="btn btn-default-sm" type="button">Look up Movie!</button>
+      </span>
+      <input type="text" class="form-control-sm" name="search" value="Lookup Movie" placeholder="Frozen">
+      
+      
+    </div>
+
+
+  <h1>Choose Movie</h1>    
+  <% if @movies %>
+  <ul class="list">
+  <% @movies.each do |movie| %>
+  <li>
+  <a href="/movies/<%= movie["imdbID"] %>"><%= movie["Title"] %>
+
+  </a>
+</li>
+
+   <% end %>
+  
+  </ul >
+    <% end %>
+
+
