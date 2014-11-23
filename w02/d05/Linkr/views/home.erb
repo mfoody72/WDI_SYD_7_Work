@@ -1,0 +1,24 @@
+
+ <h1>Link.r</h1>
+
+  <form class="search" action="/tasks" method="POST"> 
+      <input type="text" name="name" placeholder="Name: ">
+      <input type="text" name="url" placeholder="URL: "> 
+        <input type="submit" value="Add Link">
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <% @links.each do |link| %>
+ <ul>
+  <li><%= link["name"] %>&nbsp;<a href="<%= link["url"]  %>"><%= link["url"] %></a></li>
+  <% end %>
+  </ul>
+
+<!-- Go through each element of the array -->
+  <!-- Get the title 
+
+  <input type="text" name="name" placeholder="Name: ">
