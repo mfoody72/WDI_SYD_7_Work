@@ -1,0 +1,30 @@
+<form action="/posts/<%= @posts["id"] %>" method="POST">
+  <input type="hidden" name="_method" value="PUT">
+
+  <p>
+    <label for="title">Title</label><br>
+    <input type="text" name="title" id="title" value="<%= @posts["title"] %>">
+  </p>
+  <p>
+    <label for="content">Content</label><br>
+    <input type="text" name="content" id="content" value="<%= @posts["content"] %>">
+  </p>
+  <p>
+    <label for="published_at">Published At</label><br>
+    <input type="text" name="published_at" id="publised_at" value="<%= @posts["published_at"] %>">
+  </p>
+  <p>
+    <label for="author_id">author</label><br>
+    <select name="author_id" id="author_id">
+      <% @authors.each do |author| %>
+      <option value="<%= author["id"] %>"<%= @posts["author_id"] == author["id"] ? ' selected' : '' %>>
+        <%= author["first_name"] + " " + author["last_name"] %>
+      </option>
+      <% end %>
+    </select>
+  </p>
+  
+  <p>
+    <input type="submit" value="Update Posts">
+  </p>
+</form>
