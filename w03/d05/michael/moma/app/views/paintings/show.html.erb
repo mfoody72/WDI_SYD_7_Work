@@ -1,1 +1,7 @@
-<h2><%= @painting.title + " " + @painting.year %></h2>
+
+<h2><%= @painting.title %></h2>
+<p>Medium: <%= @painting.year %></p>
+<p>Year: <%= @painting.medium %></p>
+<p>Style: <%= @painting.style %></p>
+<p style="max-width: 400px;"><%= image_tag(@painting.image) %></p>
+

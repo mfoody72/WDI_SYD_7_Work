@@ -22,7 +22,7 @@
   <p>
 
   <%= f.label :artist_id %>
-  <%= f.select :artist_id, Artist.all.map {|artist| [artist.name, artist.id]} %>
+  <%= f.select :artist_id, Artist.all.map {|artist| [artist.first_name, artist.id]} %>
   </p>
   <p>
   

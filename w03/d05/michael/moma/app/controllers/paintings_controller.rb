@@ -3,24 +3,24 @@ class PaintingsController < ApplicationController
   end
 
   def show
-    @painting = painting.find(params[:id])
+    @painting = Painting.find(params[:id])
   end
 
   def new
-    @painting = painting.new
+    @painting = Painting.new
   end
 
   def create
-    @painting = painting.create(painting_params)
+    @painting = Painting.create(painting_params)
     redirect_to @painting
   end
 
   def edit
-    @painting = painting.find(params[:id])
+    @painting = Painting.find(params[:id])
   end
 
   def update
-    @painting = painting.find(params[:id])
+    @painting = Painting.find(params[:id])
     @painting.update_attributes(painting_params)
     redirect_to @painting
   end
